@@ -12,22 +12,26 @@ Schritte:
 1. Repository klonen  
     ```bash
     git clone https://github.com/gomec1/cs_ubs_fusion.git
-2. Abhängigkeiten installieren  
-    ```bash
-    npm install
-3. `.env` bereitstellen  
+2. `.env` bereitstellen  
     - Die Datei kommt separat von mir (kein `.env.example` im Repo).
     - Enthält u. a. Datenbank-URL, Auth-Secrets, OAuth-Provider, Cloudinary.
-4. Entwicklung starten  
+3. Abhängigkeiten installieren  
+    ```bash
+    npm install
+4. Datenbank-Client aufsetzen  
+    ```bash
+    npx prisma generate
+5. Entwicklung starten  
     ```bash
     npm run dev   # Next.js mit Turbopack unter http://localhost:3000
-5. (Optional) Build prüfen  
+---
+6. (Optional) Build prüfen  
     ```bash
     npm run build
-6. (Optional) Produktionsstart nach Build  
+7. (Optional) Produktionsstart nach Build  
     ```bash
     npm start
-7. (Optional) Linting  
+8. (Optional) Linting  
     ```bash
     npm run lint
 ---
